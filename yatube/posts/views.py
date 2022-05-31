@@ -5,5 +5,5 @@ def index(request):
     return HttpResponse('Главная страница')
 
 
-def group_posts(request):
-    return HttpResponse('Здесь можно всё')
+def group_posts(request, slug):
+    return HttpResponse(f'Здесь можно всё, если ты {slug}')
